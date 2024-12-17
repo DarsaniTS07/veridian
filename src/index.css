@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+  overflow-x: hidden;
+    overflow-y: scroll; 
+  }
+  
+  body::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+
+@font-face {
+    font-family: 'DM_Sans';
+    font-style: italic;
+    src: url('./fonts/DM_Sans/DMsans-Italic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'DM_Sans';
+    src: url('./fonts/DM_Sans/DMsans-Regular.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'IBM_Plex_Sans';
+    font-weight: bold;
+    src: url('./fonts/IBM_Plex_Sans/IBMplexsans-Bold.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'IBM_Plex_Sans';
+    font-style: italic;
+    src: url('./fonts/IBM_Plex_Sans/IBMplexsans-Italic.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'IBM_Plex_Sans';
+    src: url('./fonts/IBM_Plex_Sans/IBMplexsans-Regular.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'IBM_Plex_Serif';
+    src: url('./fonts/IBM_Plex_Sans/IBMplexserif-Regular.woff2') format('woff2');
+  }

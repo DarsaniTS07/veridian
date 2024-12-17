@@ -1,0 +1,33 @@
+{
+    "aboutUs": [
+        "Veridian is an investment, management and development company based in Gibraltar. We create value in our investments by leveraging our own experience, using tried-and-true strategies and extensive industry expertise." ,
+
+        "We work with our business management team to develop and implement tailored strategies focused on strong products with powerful sales, to develop profit generating growth models. Value creation is fundamental to our goal and we develop our businesses with this is mind.",
+
+        "Veridian's expertise is delivered with a responsible approach to our business, our team, our local community, and the environment."
+    ],
+    "aboutUsConent" : [{
+        "id" : 1,
+        "topic":"Excellence",
+        "content":"We strive for excellence by continuously honing our skills & expanding our knowledge. Our commitment to excellence drives innovation and quality, setting us apart as leaders in our field.",
+        "image":"Excellence"
+    },
+{
+    "id" : 2,
+        "topic":"Initiative",
+        "content":"We encourage a proactive mindset where our team is empowered to take initiative and pursue opportunities for growth. We drive creativity and transformative solutions.",
+        "image" : "Initiative"
+},
+{
+    "id" : 3,
+        "topic":"Sustainability",
+        "content":"We are dedicated to sustainable practices that positively impact our community and environment. Our commitment to responsibility ensures we contribute to a better future for generations to come.",
+        "image" : "Sustainability"
+},
+{
+    "id" : 4,
+        "topic":"Integrity",
+        "content":"We operate with honesty and uphold the highest ethical standards. Integrity is the cornerstone of our business, guiding our actions and decisions to earn the trust of our clients and partners.",
+        "image" : "Integrity"
+}]
+}
