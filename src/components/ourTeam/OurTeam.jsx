@@ -1,7 +1,7 @@
 import { Box, IconButton, Typography } from "@mui/material";
 import React, { useEffect, useRef, useState } from "react";
-import OurTeamStyles from "./ourTeamStyles";
-import entry from "./ourTeam.json";
+import OurTeamStyles from "./OurTeamStyles.jsx";
+import entry from "./OurTeam.json";
 import WestIcon from '@mui/icons-material/West';
 import EastIcon from '@mui/icons-material/East';
 import { Swiper, SwiperSlide } from "swiper/react";
