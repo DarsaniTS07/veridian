@@ -21,6 +21,7 @@ const InvestmentStyles  = {
       width: '74.2%', 
      display:'flex',
      flexDirection:'column',
+     
     },
     },
     investmentImage:{

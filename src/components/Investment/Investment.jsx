@@ -5,10 +5,9 @@ import InvestmentStyles from "./InvestmentStyles.jsx";
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import text from "./Investment.json";
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 
 
 const Investment = () => {
@@ -22,16 +21,13 @@ const Investment = () => {
 
       <Box sx={{ display: {xs:'flex',sm:'none' } }}>
       
-      <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         {text.investment.map((item,index) => {
           return(
             <SwiperSlide>
-           
             <Box
               key={`investment-${item.id || index}`}
               sx={InvestmentStyles.investmentBox}
-              width={200}
-              bgcolor={"red"}
             >
               <Box
                 component="img"
@@ -56,7 +52,7 @@ const Investment = () => {
             </SwiperSlide>
           )
         })}
-        </Swiper>
+      </Swiper>
       </Box>
 
 
