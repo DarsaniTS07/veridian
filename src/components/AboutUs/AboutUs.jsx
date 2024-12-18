@@ -1,10 +1,10 @@
 import { Box, Typography } from '@mui/material'
 import React from 'react'
 import AboutUsStyles from './AboutUsStyles'
-import Excellence from '../../assets/Excellence';
-import Initiative from '../../assets/Initiative';
-import Sustainability from '../../assets/Sustainability';
-import Integrity from '../../assets/Integrity';
+import Excellence from '../../assets/Excellence.jsx';
+import Initiative from '../../assets/Initiative.jsx';
+import Sustainability from '../../assets/Sustainability.jsx';
+import Integrity from '../../assets/Integrity.jsx';
 import VeridianWithoutBg from "../../assets/VeridianLogoWithoutBg.png";
 import data from "./AboutUs.json";
 

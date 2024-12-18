@@ -1,5 +1,4 @@
-import { Margin, Padding } from "@mui/icons-material"
-import { fontGrid } from "@mui/material/styles/cssUtils"
+
 
 const InvestmentStyles  = {
     investmentTypography:{
@@ -9,8 +8,8 @@ const InvestmentStyles  = {
         display:'flex',
         alignItems:'center',
         justifyContent:'center',
-        marginTop:'7.5rem',
-        marginBottom:'2.5rem'
+        paddingTop:'3rem',
+       paddingBottom:'2rem'
       },
     investmentBox: {
         width:'26.2%',
@@ -19,8 +18,9 @@ const InvestmentStyles  = {
         marginInline:'15px',
         padding:'25px',
         '@media (max-width: 764px)': {
-      width: '37.2%', 
-      height: '40rem',
+      width: '74.2%', 
+     display:'flex',
+     flexDirection:'column',
     },
     },
     investmentImage:{

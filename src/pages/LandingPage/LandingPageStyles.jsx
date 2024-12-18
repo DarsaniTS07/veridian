@@ -50,10 +50,10 @@ const LandingPageStyles = {
  
   investmentBg:{
     backgroundColor:'#d9efea',
-    height: "60rem",
+    height: "52rem",
     width: "72.4rem",
-    display: "flex",
-    justifyContent: "center",
+    // display: "flex",
+    // justifyContent: "center",
     // alignItems: "center",
     marginLeft: "4.2%",
     paddingInline:'7.8%',

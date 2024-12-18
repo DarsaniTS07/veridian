@@ -3,6 +3,7 @@ import Routes from './routes/Routes'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { ThemeProvider } from '@emotion/react'
 import { createTheme } from '@mui/material'
+// Import Swiper styles
 
 const App = () => {
 
@@ -28,11 +29,15 @@ const App = () => {
     },
 })
   return (
+    <>
+
+
     <Router>
     <ThemeProvider theme={theme}>
       <Routes/>
     </ThemeProvider>
     </Router>
+    </>
   )
 }
 

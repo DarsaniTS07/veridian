@@ -12,7 +12,7 @@ import {
 import React, { useState } from "react";
 import LandingPageStyles from "./LandingPageStyles.jsx";
 import VeridianLogo from "../../assets/VeridianLogo.jsx";
-import OurTeam from "../../components/ourTeam/OurTeam.jsx";
+import OurTeam from "../../components/ourTeam/ourTeam.jsx";
 import Investment from "../../components/Investment/Investment.jsx";
 import Contact from "../../components/Contact/Contact.jsx";
 import AboutUs from "../../components/AboutUs/AboutUs.jsx";
@@ -22,6 +22,10 @@ import { useStore } from "../../useStore.js";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import VeridianLogoWithoutBg from "../../assets/VeridianLogoWithoutBg.png";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
 
 const LandingPage = () => {
   const navItems = [
@@ -172,7 +176,6 @@ const LandingPage = () => {
           "@media(max-width:764px)": {
             marginLeft: "4px",
           },
-          // marginLeft: { xs: "5px", sm: "6rem" },
         }}
       >
         <Home />
@@ -207,7 +210,6 @@ const LandingPage = () => {
       </Box>
 
       {/* Investment Approach */}
-
       <Box id="investmentApproach" sx={LandingPageStyles.investmentBg}>
         <Investment />
       </Box>
