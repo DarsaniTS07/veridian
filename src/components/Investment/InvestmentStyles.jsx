@@ -9,14 +9,19 @@ const InvestmentStyles  = {
         display:'flex',
         alignItems:'center',
         justifyContent:'center',
-        marginTop:'12rem',
-        marginBottom:'1.8rem'
+        marginTop:'7.5rem',
+        marginBottom:'2.5rem'
       },
     investmentBox: {
-        width:'20rem',
+        width:'26.2%',
         height:'40rem',
         backgroundColor:'#ffffff',
-        margin:'20px',padding:'25px'
+        marginInline:'15px',
+        padding:'25px',
+        '@media (max-width: 764px)': {
+      width: '37.2%', 
+      height: '40rem',
+    },
     },
     investmentImage:{
        

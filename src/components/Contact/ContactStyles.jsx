@@ -10,6 +10,10 @@ const ContactStyles = {
     marginRight: "4rem",
     textAlign: "center",
     width: "100%",
+    '@media(max-width:764px)':{
+      marginLeft:'10%'
+
+    }
   },
   contactTopic: {
     textAlign: "center",

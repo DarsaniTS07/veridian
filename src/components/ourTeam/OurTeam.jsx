@@ -1,5 +1,5 @@
 import { Box, IconButton, Typography } from "@mui/material";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import OurTeamStyles from "./ourTeamStyles";
 import entry from "./ourTeam.json";
 import WestIcon from '@mui/icons-material/West';
@@ -13,10 +13,18 @@ import "swiper/css/pagination";
 const OurTeam = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
-  
-  useEffect(() => {
+  const swiperRef = useRef(null);
 
-  })
+  useEffect(() => {
+    if (swiperRef.current) {
+      // Initialize navigation after Swiper instance is available
+      swiperRef.current.params.navigation.prevEl = prevRef.current;
+      swiperRef.current.params.navigation.nextEl = nextRef.current;
+      swiperRef.current.navigation.init();
+      swiperRef.current.navigation.update();
+    }
+  }, [swiperRef.current]);
+
 
   return (
     <Box>
@@ -27,6 +35,7 @@ const OurTeam = () => {
         </IconButton>
        
         <Swiper
+        onSwiper={(swiper) => { swiperRef.current = swiper; }}
           spaceBetween={-30}
           slidesPerView={1.50}
           centeredSlides={true}
@@ -40,14 +49,14 @@ const OurTeam = () => {
           // //     spaceBetween:200
           // //   }
           // }}
-          onSwiper={(swiper) =>{
-            setTimeout(() => {
-              swiper.params.navigation.prevEl= prevRef.current;
-              swiper.params.navigation.nextEl= nextRef.current;
-              swiper.navigation.init();
-              swiper.navigation.update();
-            })
-          }}
+          // onSwiper={(swiper) =>{
+          //   setTimeout(() => {
+          //     swiper.params.navigation.prevEl= prevRef.current;
+          //     swiper.params.navigation.nextEl= nextRef.current;
+          //     swiper.navigation.init();
+          //     swiper.navigation.update();
+          //   })
+          // }}
           pagination={{ clickable: true }}
           modules={[Navigation]}
           // loop={true}
