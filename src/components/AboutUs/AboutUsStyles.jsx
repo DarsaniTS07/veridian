@@ -12,7 +12,7 @@ const AboutUsStyles = {
         '@media(max-width:764px)':{
           display:'flex',
           flexDirection:'column',
-          width:'32%',
+          width:'23.5%',
           marginInline:'2.5%',
           height:'auto'
         }
@@ -21,14 +21,16 @@ const AboutUsStyles = {
         fontSize:'25px',
         fontFamily:'IBM_Plex_Serif',
         fontWeight:600,
-        display:'flex',
-        alignItems:'center',
-        justifyContent:'center',
+        // display:'flex',
+        // alignItems:'center',
+        // justifyContent:'center',
         marginTop:'2rem',
         marginBottom:'1.5rem',
         marginLeft:'15%',
         '@media(max-width:764px)':{
-            marginRight:'76%',
+            marginRight:'75%',
+            width:'100%',
+            marginLeft:'9%'
         }
       },
       aboutUsVeridianPic:{
@@ -40,7 +42,7 @@ const AboutUsStyles = {
        
         '@media(max-width:764px)':{
           margin:'6% 9% 0% 8%',
-          width:'32%'
+          width:'16%'
         }
       },
       aboutUsVeridianContent:{
@@ -83,7 +85,7 @@ const AboutUsStyles = {
           display:'flex',
           flexDirection:'column',
           paddingRight:'2%',
-          width:'45%',
+          width:'33%',
         }
       },
       contentTopic:{
@@ -99,7 +101,7 @@ const AboutUsStyles = {
         color:'secondary.main',
         marginTop:'1rem',
         '@media(max-width:764px)':{
-            width:'91%'
+            width:'135%'
         }
       },
       contentImage:{

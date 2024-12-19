@@ -18,10 +18,10 @@ const InvestmentStyles  = {
         marginInline:'15px',
         padding:'25px',
         '@media (max-width: 764px)': {
-      width: '74.2%', 
+      width: '76.2%', 
      display:'flex',
      flexDirection:'column',
-     
+  marginInline:'6%'   
     },
     },
     investmentImage:{
@@ -46,8 +46,29 @@ const InvestmentStyles  = {
       paragraph:{
         fontSize: '14px',
         marginBottom: '0.5rem',
-      }
+      },
+      pagination: {
+        ".swiper-pagination": {
+          bottom: "10px", // Position the dots below
+        },
+        ".swiper-pagination-bullet": {
+          background: "gray",
+          width: "10px",
+          height: "10px",
+          borderRadius: "50%",
+          opacity: 0.6,
+          transition: "all 0.3s ease",
+        },
+        ".swiper-pagination-bullet-active": {
+          background: "black",
+          width: "20px", // Twice the size for the active dot
+          height: "10px",
+          borderRadius: "5px",
+          opacity: 1,
+        },
+      },
+    };
  
-}
+
 
 export default InvestmentStyles

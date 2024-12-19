@@ -8,11 +8,11 @@ import {
   ListItemButton,
   ListItemText,
   Typography,
-} from "@mui/material";
+} from "@mui/material"; 
 import React, { useState } from "react";
 import LandingPageStyles from "./LandingPageStyles.jsx";
 import VeridianLogo from "../../assets/VeridianLogo.jsx";
-import OurTeam from "../../components/ourTeam/ourTeam.jsx";
+import OurTeam from "../../components/ourTeam/OurTeam.jsx";
 import Investment from "../../components/Investment/Investment.jsx";
 import Contact from "../../components/Contact/Contact.jsx";
 import AboutUs from "../../components/AboutUs/AboutUs.jsx";
@@ -154,7 +154,7 @@ const LandingPage = () => {
       </Drawer>
 
       {/* Home */}
-
+<Box >
       <Box
         id="home"
         sx={{
@@ -239,6 +239,7 @@ const LandingPage = () => {
         <Typography sx={{ marginLeft: "auto", fontSize: "14px" }}>
           Term of use
         </Typography>
+      </Box>
       </Box>
     </>
   );

@@ -5,9 +5,10 @@ import InvestmentStyles from "./InvestmentStyles.jsx";
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import text from "./Investment.json";
-import { Navigation } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 
 
 const Investment = () => {
@@ -18,10 +19,12 @@ const Investment = () => {
           Holistic Investment Approach
         </Typography>
       </Box>
-
-      <Box sx={{ display: {xs:'flex',sm:'none' } }}>
+<Box>
+      <Box sx={{ display: {xs:'flex',sm:'none' }, ...InvestmentStyles.pagination}}>
       
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+      <Swiper navigation={false}
+      pagination ={{clickable:true}}
+       modules={[Navigation,Pagination]} className="mySwiper">
         {text.investment.map((item,index) => {
           return(
             <SwiperSlide>
@@ -53,6 +56,7 @@ const Investment = () => {
           )
         })}
       </Swiper>
+      </Box>
       </Box>
 
 

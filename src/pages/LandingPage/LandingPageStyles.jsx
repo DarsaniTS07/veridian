@@ -59,7 +59,8 @@ const LandingPageStyles = {
     paddingInline:'7.8%',
     '@media(max-width:764px)':{
       width:'75.4%',
-      marginInline:'4.1%'
+      marginInline:'4.1%',
+      paddingBottom:'20%'
     }
 
   },

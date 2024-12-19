@@ -1,3 +1,4 @@
+import { CgOverflow } from "react-icons/cg"
 
 const OurTeamStyles = {
     ourTeamTypography:{
@@ -12,7 +13,7 @@ const OurTeamStyles = {
         marginLeft:'10rem',
         '@media(max-width:764px)':{
           marginRight:'76%',
-          width:'30%'
+          width:'30%',
         }
       },
       ourTeamContent:{
@@ -21,8 +22,12 @@ const OurTeamStyles = {
         flexDirection:'row',
        justifyContent:'center', 
         width: '87.4rem', 
+        // backgroundColor:'green',
         '@media(max-width:764px)':{
-          width:'98%'
+          width:"57%",
+          overflow:"hidden",
+          // backgroundColor:'blue'
+        
         }
       },
       parallelogramBox:{
@@ -33,19 +38,36 @@ const OurTeamStyles = {
        margin:'20px',
        '@media(max-width:764px)':{
           transform:'skew(0deg)',
+          // margin:0,
+         
+          width:"70%",
+          height:"auto",
+          minHeight:"50em",
+          margin:"auto",
+          marginLeft:"-20%",
         }
       },
       parallelogramContent:{
         width:'50rem',
         fontFamily:'DM_Sans',
         transform:'none !important' ,
+        "@media(max-width:764px)": {
+          width:"20rem",
+          margin:0,
+          height:"auto",
+          // position:"absolute",
+          // top:"80%",
+
+        }
         
       },
       photo:{
         marginTop:'6.1rem',
         transform:'skew(24deg)',
         '@media(max-width:764px)':{
-          transform:'skew(2deg)'
+          transform:'skew(2deg)',
+          height:"auto",
+          position:"relative",
         }
       },
       ourTeamText:{
@@ -58,6 +80,12 @@ const OurTeamStyles = {
         color:'#717B85',
         '@media(max-width:764px)':{
           transform:'skew(0deg)',
+          flexDirection:"column-reverse",
+        //  marginTop:"10em",
+         width:"80%",
+         margin:0,
+         marginLeft:"10%",
+          
         }
       },
       paragraph:{
@@ -73,7 +101,15 @@ const OurTeamStyles = {
         backgroundColor:'primary.main',
         alignItems:'center',
         display:'flex',
+        "@media(max-width:764px)": {
+          flexDirection:'column-reverse',
+          position:"absolute",
+          top:"36%",
+          // marginBottom:"10em",
+          transform:"skew(-20deg)",
+        }
       },
+      
       OurTeamName: {
           fontSize:'19px',
           fontFamily:'IBM_Sans_serif',
@@ -99,6 +135,9 @@ const OurTeamStyles = {
         fontSize: "1.5em",
         boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
         "&:hover": { backgroundColor: "#f0f0f0" },
+        "@media(max-width:764px)":{
+          right:"70%"
+        }
       },
       iconLeft:{
         position: "absolute",
@@ -111,6 +150,30 @@ const OurTeamStyles = {
         fontSize: "1.5em",
         boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
         "&:hover": { backgroundColor: "#f0f0f0" },
+        '@media(max-width:764px)':{
+        // marginLeft:'15%'
+        }
+      },
+      parallset1:{
+        display:'flex',
+        "@media(max-width:764px)": {
+          flexDirection:'column',
+          height:'auto'
+        },
+      
+
+      },
+      parallelset2:{
+        display:'flex', 
+        flexDirection:'column',
+        "@media(max-width:764px)": {
+          flexDirection:"column",          
+          // top:"100%",
+         
+          // marginTop:"5em",
+          // marginBottom:"10em",
+         
+        }
       }
 }
 

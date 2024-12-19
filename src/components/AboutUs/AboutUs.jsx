@@ -53,7 +53,7 @@ const AboutUs = () => {
                     key={`aboutUsContent-${item.id}`}
                     sx={AboutUsStyles.content}
                   >
-                    <Box sx={{ width: "25rem", marginInline: "1.5rem" }}>
+                    <Box sx={{ width: "70%", marginInline: "1.5rem" }}>
                       <Typography sx={AboutUsStyles.contentTopic}>
                         {item.topic}
                       </Typography>
